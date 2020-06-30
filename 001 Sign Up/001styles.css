@@ -1,0 +1,117 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.signup-container {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: grid;
+}
+
+.left,
+.right {
+    padding: 4em;
+    color: #f1faee;
+
+
+}
+
+.left {
+    background-image: linear-gradient(#457b9d, #1d3557);
+    box-shadow: 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 7px 8px -4px rgba(0, 0, 0, 0.20);
+
+
+}
+
+.right {
+    background-color: #f1faee;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    line-height: 1.5em;
+}
+
+li>i {
+    margin-right: 1em;
+}
+
+
+.subscription-form {
+    display: grid;
+    grid-gap: .25em;
+    color: #1d3557;
+    grid-template-columns: 1fr;
+}
+
+
+label {
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+input {
+    margin-bottom: 1.25em;
+    padding: 1em;
+    font-size: 1em;
+    color: #1d3557;
+    border: 1px solid #bbb;
+    background-color: white;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+.button {
+    padding: 1em 2em;
+    background-color: #e63946;
+    width: fit-content;
+}
+
+.button a {
+    color: #f1faee;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+    .signup-container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .left,
+    .right {
+        display: grid;
+        align-content: center;
+    }
+
+    .left {
+        padding: 6em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+
+
+}
